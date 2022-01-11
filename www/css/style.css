@@ -3,6 +3,8 @@ body {
     font-size: 15px;
     line-height: 1.4;
     color: black;
+    background-image: url(../img/backg_texture.jpg);
+    background-size: 400px 400px;
 }
 .title {
     text-align: center;
@@ -12,9 +14,7 @@ body {
     text-align: justify;
 
 }
-p {
-    text-indent: 20px;
-}
+
 .table {
     width: 100%;
     border: 2px solid #000;
@@ -36,4 +36,28 @@ p {
 }
 .table tfoot td {
     text-align: right;
+}
+/*Post*/
+.post {
+    width: 700px;
+    height: 400px;
+    padding: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+   
+
+}
+.post-title {
+    color: chocolate;
+}
+.post {
+    background-image: url(../img/backg_page.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.post-text p {
+    color: cornsilk;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
