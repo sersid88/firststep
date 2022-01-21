@@ -3,7 +3,7 @@ body {
     font-size: 15px;
     line-height: 1.4;
     color: black;
-    background-image: url(../img/backg_texture.jpg);
+    /* gibackground-image: url(../img/backg_texture.jpg); */
     background-size: 400px 400px;
 }
 .title {

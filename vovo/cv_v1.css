@@ -1,0 +1,202 @@
+ul, p {
+  margin: 0;
+}
+
+.list--with-bullets {
+  list-style: none inside;
+  padding-left: 0;
+}
+
+.list--with-bullets li::before {
+  content: "\003E";
+  color: hsla(39, 100%, 50%, 0.75);
+  display: inline-block;
+  width: 11pt;
+  margin-left: 8pt;
+  font-weight: bold;
+}
+
+a, a:visited, a:hover {
+  color: hsla(222, 100%, 43%, 1);
+  text-decoration-color: hsla(222, 100%, 43%, 0.35);
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  flex-grow: 1;
+}
+
+.cv {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  color: #000;
+  line-height: 130%;
+
+  max-width: 8.27in;
+  margin: 0 auto;
+
+  -webkit-font-smoothing: subpixel-antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.name-full {
+  font-size: 26pt;
+  line-height: 115%;
+
+  font-weight: bold;
+  color: hsla(0, 0%, 17%, 1);
+}
+
+.job-title {
+  font-size: 18px;
+  margin-top: 6pt;
+  color: hsla(0, 0%, 33%, 1);
+}
+
+.job-title ul {
+  padding: 0;
+}
+
+.job-title li {
+  display: inline-block;
+}
+
+.job-title li::after {
+  content: "|";
+  padding-left: 4px;
+  width: 3px;
+  display: inline-block;
+}
+
+.job-title li:last-of-type::after {
+  display: none;
+}
+
+.contacts {
+  text-align: right;
+}
+
+.contacts ul {
+  font-size: 10pt;
+  list-style: none;
+}
+
+.contacts li {
+  line-height: 90%;
+  display: block;
+  width: 100%;
+}
+
+.contacts i {
+  font-size: 24px;
+  position: relative;
+  top: 4px;
+  margin-right: 3px;
+  color: hsla(0, 0%, 33%, 1);
+}
+
+.section {
+  font-size: 11pt;
+  line-height: 130%;
+  margin-bottom: 15pt;
+}
+
+.section .name,
+.section .item-name {
+  font-weight: bold;
+  color: hsla(0, 0%, 21%, 1);
+}
+
+.item-name a {
+  font-weight: normal;
+}
+
+.section .name {
+  font-size: 12pt;
+  margin-bottom: 5pt;
+}
+
+.section--experience .item-table__row {
+  margin-bottom: 5pt;
+}
+
+.principles {
+  margin-top: 5pt;
+}
+
+.intro p + p,
+.work-permits p + p,
+.public-activity p + p,
+.certifications ul + p,
+.recommendations p + p
+{
+  margin-top: 5pt;
+}
+
+.skills ul {
+  column-count: 3;
+}
+
+.tools ul {
+  column-count: 1;
+}
+
+.term {
+  font-weight: bold;
+  color: hsla(0, 0%, 21%, 1);
+}
+
+.recommendations {
+  font-size: 14px;
+}
+
+.recommendations .item-table__details {
+  border-left: 3px solid hsla(0, 0%, 33%, 0.25);
+  padding-left: 10px;
+}
+
+.recommendations .description {
+  text-align: right;
+}
+
+.item-table__row {
+  display: flex;
+  flex-direction: row;
+}
+
+.item-table__row .description {
+  flex-grow: 1;
+}
+
+.section--projects .description a {
+  display: block;
+}
+
+.item-table__row .dates {
+  text-align: right;
+  font-size: 14px;
+}
+
+.item-table__details p {
+  margin: 5pt 0;
+}
+
+.dates .duration,
+.label {
+  font-style: italic;
+  color: hsla(0, 0%, 33%, 1);
+}
+
+@media print {
+  @page {
+    margin: 0.3in;
+  }
+
+  .section {
+    page-break-inside: avoid;
+  }
+}
